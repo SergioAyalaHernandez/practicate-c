@@ -9,139 +9,318 @@ El programa está estructurado de la siguiente manera:
 - Implementación de funciones.
 - Menú interactivo en `main()`.
 
+## Tipos:
+
+# Índice de Funciones
+# Operaciones con Números
+
+Evaluar Número
+Evaluar Paridad
+Determinar Mayor
+Determinar Menor
+Última Cifra de un Número
+Calcular Factorial
+Número en Romano
+
+# Bucles y Secuencias
+
+Imprimir Números de 100 a -2
+Imprimir Números Pares del 1 al 100
+Calcular Números Hasta N
+Sumar Números Hasta N
+
+# Sumas y Promedios
+
+Calcular Promedio de Notas
+Sumar 20 a 50
+Sumar 15 Números
+Sumar Números Pares
+Sumar Números Impares
+Promedio de Edades
+
+# Conteo y Estadísticas
+
+Contar Múltiplos de 2 y 3
+Contar Números Impares
+Mayor y Menor de 5 Números
+
+# Ordenamiento
+
+Ordenar 3 Números de Mayor a Menor
+Ordenar 3 Números de Menor a Mayor
+
+# Geometría y Matemáticas
+
+Calcular Área y Volumen de Cilindro
+Calcular Residuos de División
+Hipotenusa
+Círculo
+Esfera
+Evaluar Función
+
+# Conversiones
+
+Convertir Velocidad
+Convertir Centímetros a Pulgadas
+Convertir Minutos a Horas
+Fahrenheit a Celsius
+Celsius a Fahrenheit
+Convertir Moneda
+Libras a Kilos
+
+# Datos Personales y Clasificación
+
+Verificar Mayor de Edad
+Mostrar Mes
+Signo Zodiacal
+
+# Notas y Calificaciones
+
+Nota Final 1
+Nota Final 2
+
+Procesamiento de Datos
+
+
 ## Funciones Implementadas
 
-### 1. Evaluar Número
-Evalúa si un número es positivo, negativo o cero.
+# Resumen Rápido: Métodos en C++
 
-### 2. Evaluar Paridad
-Determina si un número es par o impar.
+## Métodos para evaluación de números
 
-### 3. Imprimir Números del 100 al -2
-Muestra en pantalla los números desde 100 hasta -2 en orden decreciente.
+**`evaluarNumero()`**
+- Entrada: un número
+- Compara con 0 usando if-else
+- Salida: indica si es positivo, negativo o cero
 
-### 4. Imprimir Números Pares del 1 al 100
-Imprime los números pares en el rango de 1 a 100.
+**`evaluarParidad()`**
+- Entrada: un número
+- Verifica residuo de división por 2
+- Salida: indica si es par o impar
 
-### 5. Calcular Promedio de Notas
-Calcula el promedio de varias notas ingresadas por el usuario.
+**`determinarMayor()`**
+- Entrada: dos números
+- Compara usando if-else
+- Salida: muestra el mayor o si son iguales
 
-### 6. Contar Múltiplos de 2 y 3
-Cuenta cuántos números del 1 al 100 son múltiplos de 2 y de 3.
+**`determinarMenor()`**
+- Entrada: dos números
+- Compara usando if-else
+- Salida: muestra el menor o si son iguales
 
-### 7. Determinar Mayor
-Determina el número mayor entre dos valores ingresados.
+## Métodos de bucles y conteo
 
-### 8. Determinar Menor
-Determina el número menor entre dos valores ingresados.
+**`imprimirNumeros100aMenos2()`**
+- Bucle for decreciente desde 100 hasta -2
+- Imprime cada número en la secuencia
 
-### 9. Sumar Números del 20 al 50
-Calcula la suma de todos los números en el rango de 20 a 50.
+**`imprimirNumerosPares1a100()`**
+- Bucle for con incremento de 2 desde 2 hasta 100
+- Imprime cada número par
 
-### 10. Sumar 15 Números
-Solicita 15 números al usuario y los suma.
+**`contarMultiplos2y3()`**
+- Inicializa contadores a 0
+- Bucle for desde 1 hasta 100
+- Incrementa contadores verificando residuos
+- Muestra resultados finales
 
-### 11. Verificar Mayoría de Edad
-Verifica si una persona es mayor de edad (18 años o más).
+**`contarNumerosImpares()`**
+- Inicializa contador a 0
+- Bucle for desde 1 hasta 100
+- Incrementa contador cuando residuo no es 0
+- Muestra total de impares
 
-### 12. Ordenar 3 Números (Mayor a Menor)
-Ordena tres números ingresados de mayor a menor.
+## Métodos de cálculo y suma
 
-### 13. Ordenar 3 Números (Menor a Mayor)
-Ordena tres números ingresados de menor a mayor.
+**`calcularPromedioNotas()`**
+- Inicializa suma y contador a 0
+- Bucle do-while para entrada de notas
+- Acumula valores positivos
+- Calcula promedio (suma/contador)
 
-### 14. Calcular Área y Volumen de un Cilindro
-Calcula el área y volumen de un cilindro dados su radio y altura.
+**`sumar20a50()`**
+- Inicializa suma a 0
+- Bucle for desde 20 hasta 50
+- Acumula cada valor
+- Muestra la suma total
 
-### 15. Convertir Velocidad
-Convierte velocidad de una unidad a otra.
+**`sumar15Numeros()`**
+- Inicializa suma a 0
+- Bucle for para leer 15 números
+- Acumula cada valor ingresado
+- Muestra suma total
 
-### 16. Contar Números Impares
-Cuenta los números impares en un rango determinado.
+**`sumarNumerosPares()`**
+- Inicializa suma a 0
+- Bucle for desde 1 hasta 100
+- Acumula solo si residuo por 2 es 0
+- Muestra suma total
 
-### 17. Sumar Números Impares
-Suma los números impares en un rango determinado.
+**`sumarNumerosImpares()`**
+- Inicializa suma a 0
+- Bucle for desde 1 hasta 100
+- Acumula solo si residuo por 2 no es 0
+- Muestra suma total
 
-### 18. Sumar Números Pares
-Suma los números pares en un rango determinado.
+## Métodos de ordenamiento
 
-### 19. Mayor y Menor de 5 Números
-Determina el mayor y menor entre cinco números ingresados.
+**`ordenar3NumerosMayorAMenor()`**
+- Entrada: tres números
+- Compara todos los casos posibles
+- Salida: números ordenados de mayor a menor
 
-### 20. Calcular Factorial
-Calcula el factorial de un número.
+**`ordenar3NumerosMenorAMayor()`**
+- Entrada: tres números
+- Compara todos los casos posibles
+- Salida: números ordenados de menor a mayor
 
-### 21. Número en Romano
-Convierte un número a su representación en números romanos.
+## Métodos para operaciones matemáticas
 
-### 22. Última Cifra de un Número
-Obtiene la última cifra de un número ingresado.
+**`calcularAreaVolumenCilindro()`**
+- Entrada: radio y altura
+- Aplica fórmulas con constante PI
+- Salida: área y volumen calculados
 
-### 23. Convertir Centímetros a Pulgadas
-Convierte una medida de centímetros a pulgadas.
+**`calcularFactorial()`**
+- Entrada: un número
+- Inicializa factorial en 1
+- Bucle for multiplicando desde 1 hasta n
+- Salida: factorial calculado
 
-### 24. Convertir Minutos a Horas
-Convierte una cantidad de minutos en horas y minutos.
+**`hipotenusa()`**
+- Entrada: dos catetos
+- Calcula usando teorema de Pitágoras
+- Salida: valor de la hipotenusa
 
-### 25. Mostrar Mes
-Muestra el nombre del mes correspondiente a un número ingresado (1-12).
+**`circulo()`**
+- Entrada: radio
+- Calcula perímetro (2πr)
+- Calcula área (πr²)
+- Muestra resultados
 
-### 26. Signo Zodiacal
-Determina el signo zodiacal de una persona según su fecha de nacimiento.
+## Métodos de conversión
 
-### 27. Contar Números Hasta N
-Cuenta los números desde 1 hasta un número `N` ingresado.
+**`convertirVelocidad()`**
+- Entrada: velocidad en km/h
+- Multiplica por 1000/3600
+- Salida: velocidad en m/s
 
-### 28. Sumar Números Hasta N
-Suma los números desde 1 hasta un número `N` ingresado.
+**`convertirCentimetrosAPulgadas()`**
+- Entrada: medida en cm
+- Divide por 2.54
+- Salida: medida en pulgadas
 
-### 29. Calcular Residuos de División
-Calcula el residuo de la división de dos números ingresados.
+**`convertirMinutosAHoras()`**
+- Entrada: minutos totales
+- Divide entre 60 para horas (enteras)
+- Calcula residuo para minutos
+- Salida: formato horas y minutos
 
-### 30. Cálculo de un Círculo
-Calcula el área y circunferencia de un círculo.
+**`fahrenheitToCelsius()`**
+- Entrada: temperatura °F
+- Aplica fórmula (F-32)*5/9
+- Salida: temperatura en °C
 
-### 31. Cálculo de una Esfera
-Calcula el área superficial y volumen de una esfera.
+**`celsiusToFahrenheit()`**
+- Entrada: temperatura °C
+- Aplica fórmula (C*9/5)+32
+- Salida: temperatura en °F
 
-### 32. Calcular Hipotenusa
-Calcula la hipotenusa de un triángulo rectángulo usando el teorema de Pitágoras.
+**`convertirMoneda()`**
+- Entrada: opción de conversión y cantidad
+- Define tasas de cambio como constantes
+- Switch para seleccionar conversión
+- Aplica cálculo según selección
+- Salida: cantidad convertida
 
-### 33. Convertir Fahrenheit a Celsius
-Convierte una temperatura de Fahrenheit a Celsius.
+## Métodos para procesamiento específico
 
-### 34. Convertir Celsius a Fahrenheit
-Convierte una temperatura de Celsius a Fahrenheit.
+**`numeroEnRomano()`**
+- Entrada: número entre 1-10
+- Switch para cada caso
+- Salida: representación romana (I-X)
 
-### 35. Nota Final (3 Notas)
-Calcula la nota final de un estudiante basado en tres notas.
+**`ultimaCifraNumero()`**
+- Entrada: un número
+- Calcula valor absoluto y residuo por 10
+- Salida: último dígito
 
-### 36. Nota Final (4 Notas)
-Calcula la nota final de un estudiante basado en cuatro notas.
+**`mostrarMes()`**
+- Entrada: número entre 1-12
+- Switch para cada caso
+- Salida: nombre del mes correspondiente
 
-### 37. Evaluar Función Matemática
-Evalúa una función matemática con un valor dado.
+**`signoZodiacal()`**
+- Entrada: día y mes
+- Serie de condiciones para rangos de fechas
+- Salida: signo zodiacal correspondiente
 
-### 38. Promedio de Edades
-Calcula el promedio de edades ingresadas por el usuario.
+**`calcularNumerosHastaN()`**
+- Entrada: número n
+- Bucle for desde 1 hasta n
+- Imprime cada número
 
-### 39. Mostrar Números Positivos
-Muestra los números positivos de una lista ingresada.
+**`sumarNumerosHastaN()`**
+- Entrada: número n
+- Bucle for desde 1 hasta n
+- Acumula suma
+- Salida: suma total
 
-### 40. Encuesta de Colores
-Realiza una encuesta sobre colores preferidos.
+**`calcularResiduosDivision()`**
+- Entrada: dividendo y divisor
+- Verifica que divisor no sea cero
+- Calcula residuo con operador %
+- Salida: valor del residuo
 
-### 41. Comparar Sexo
-Compara y cuenta cuántas personas son de cada género ingresado.
+## Métodos para cálculo de notas
 
-### 42. Convertir Moneda
-Convierte una cantidad de dinero de una moneda a otra.
+**`notaFinal1()`**
+- Entrada: tres notas
+- Aplica ponderación (30%, 30%, 40%)
+- Salida: nota final calculada
 
-### 43. Convertir Libras a Kilos
-Convierte una cantidad en libras a kilogramos.
+**`notaFinal2()`**
+- Entrada: cuatro notas
+- Aplica ponderación (20%, 20%, 10%, 50%)
+- Salida: nota final calculada
 
-### 44. Calcular Sueldo de un Empleado
-Calcula el sueldo de un empleado basado en horas trabajadas y tarifa horaria.
+## Métodos para estadísticas
+
+**`mayorMenorDe5Numeros()`**
+- Entrada: cinco números
+- Inicializa mayor y menor con primer valor
+- Actualiza en cada iteración si corresponde
+- Salida: mayor y menor valores
+
+**`mostrarPositivos()`**
+- Entrada: diez números
+- Bucle for para leer valores
+- Imprime solo los positivos
+
+**`encuestaColores()`**
+- Inicializa contadores para cada color
+- Bucle for para 10 entradas (1=rojo, 2=verde, 3=azul)
+- Incrementa contador según selección
+- Salida: porcentajes de cada color
+
+**`compararSexo()`**
+- Entrada: n personas con sexo y puntaje
+- Acumula totales separados por sexo
+- Calcula promedios dividiendo totales entre contadores
+- Salida: promedio de hombres y mujeres
+
+**`sueldoEmpleado()`**
+- Entrada: categoría (A,B,C) y horas
+- Switch para determinar tarifa por categoría
+- Calcula sueldo (tarifa * horas)
+- Salida: sueldo mensual
+
+**`registroPeaje()`**
+- Inicializa contadores para tipos de vehículos
+- Bucle while hasta input 0
+- Acumula contadores y pasajeros según tipo
+- Calcula promedios
+- Salida: estadísticas finales
 
 ## Funcionamiento del Menú
 El menú principal permite al usuario seleccionar la función a ejecutar mediante la entrada de un número correspondiente a la opción deseada. Si se ingresa `0`, el programa termina la ejecución.
